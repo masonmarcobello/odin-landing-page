@@ -1,0 +1,154 @@
+body {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0; 
+  text-align: center;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  color: #F9FAF8;
+  background-color: #1F2937;
+  padding: 20px 0px 20px 100px;
+  align-items: center;
+}
+
+.logo img {
+  width: 84px;
+  height: 82px; 
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+  margin-left: auto;
+  padding: 0px 100px 0px 0px; 
+}
+
+.links a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+  padding: 10px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Hero Part */
+
+.hero {
+  display: flex;
+  color: #F9FAF8;
+  background-color: #1F2937;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #F9FAF8;
+  margin: 0;
+  font-family: 'Roboto', arial;
+}
+
+.hero p {
+  font-family: 'Roboto', arial;
+  opacity: 0.7;
+}
+
+.hero button {
+  display: block;
+  text-align: center;
+  width: 110px;
+  border: none;
+
+}
+
+.hero img {
+  width: 500px;
+  height: 350px;
+}
+
+/* Content Part */
+
+.content {
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #3882F6;
+  border-radius: 15px;
+  margin: 5px 20px 0px 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Quotation Part */
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  padding: 0 200px;
+}
+
+.quote p {
+  font-size: 36px;
+  color: #1F2937;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: 'Roboto', arial;
+}
+
+.quote b {
+  padding-bottom: 20px;
+  padding-right: 10px;
+  font-family: 'Roboto', arial;
+  text-align: right;
+}
+
+/* Sign Up Part */
+
+.sign-up {
+  background-color: #3882F6 ;
+  margin: 50px 200px;
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border-color: none;
+}
+
+.sign-item {
+  flex: 1;
+}
+
+.signs-text {
+  text-align: left;
+}
+
+.signs-button button {
+  background: #F9FAF8;
+  color: #1F2937;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Roboto', arial;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
