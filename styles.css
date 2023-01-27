@@ -1,7 +1,8 @@
+
 body {
   background-color: #FFFFFF;
   padding: 0;
-  margin: 0; 
+  margin: 0;
   text-align: center;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -10,19 +11,20 @@ header {
   display: flex;
   color: #F9FAF8;
   background-color: #1F2937;
-  padding: 20px 0px 20px 100px;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 20px 100px;
 }
 
 .logo img {
   width: 84px;
   height: 82px; 
-  margin-right: auto;
+  float: left;
 }
 
 .links {
   display: flex;
-  margin-left: auto;
+  float: right;
   padding: 0px 100px 0px 0px; 
 }
 
@@ -34,121 +36,154 @@ header {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-/* Hero Part */
+a:hover {
+  color: lightpink; /* Color change when user hovers over links */
+}
+
+/* Hero Part - below the navigation.*/
 
 .hero {
   display: flex;
-  color: #F9FAF8;
+  justify-content: space-between;
+  color: #F9FAF8; 
   background-color: #1F2937;
-  align-items: center;
-  justify-content: center;
   padding: 90px;
+  flex-flow: wrap;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+
+}
+
+.right-container {
+  display: flex;
 }
 
 .hero h1 {
   font-size: 48px;
   font-weight: bold;
   color: #F9FAF8;
-  margin: 0;
+  text-align: justify;
   font-family: 'Roboto', arial;
+  margin-bottom: 0%;
 }
 
-.hero p {
-  font-family: 'Roboto', arial;
+.side-text {
+  font-size: 18px;
   opacity: 0.7;
+  font-family: 'Roboto', arial;
+  text-align: justify;
+ 
 }
 
-.hero button {
-  display: block;
-  text-align: center;
-  width: 110px;
-  border: none;
-
+.button-class {
+  background-color:#3882F6;
+  border-color:#3882F6;
+  border-radius: 10px;
+  color:#F9FAF8;
+  padding:0;
+  width:150px;
+  height:50px;
+  font-size: small;
 }
 
-.hero img {
-  width: 500px;
-  height: 350px;
+.pepe-image {
+  width: auto;
+  height: 250px;
 }
 
-/* Content Part */
+/* four pepe images section */
 
-.content {
-  align-items: center;
+h2 {
+  font-size:36px;
+  font-weight: 900;
+  color:#1F2937
 }
 
 .card-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 64px;
 }
 
-.card {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 4px solid #3882F6;
-  border-radius: 15px;
-  margin: 5px 20px 0px 20px;
+.card-container img {
+  width: auto;
+  height: 75px;
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
+.card-container p {
+  align-items: center;
 }
-
-/* Quotation Part */
 
 .quote {
-  display: flex;
-  flex-direction: column;
-  background-color: #E5E7EB;
-  padding: 0 200px;
-}
-
-.quote p {
+  background-color:#E5E7EB;
   font-size: 36px;
   color: #1F2937;
-  font-style: italic;
   font-weight: lighter;
-  font-family: 'Roboto', arial;
+  font-style: italic;
+  padding: 32px 25%;
 }
 
-.quote b {
-  padding-bottom: 20px;
-  padding-right: 10px;
-  font-family: 'Roboto', arial;
-  text-align: right;
-}
-
-/* Sign Up Part */
-
-.sign-up {
-  background-color: #3882F6 ;
-  margin: 50px 200px;
-  padding: 10px 80px;
+.sign-up-section {
   display: flex;
-  align-items: center;
-  border-radius: 5px;
-  border-color: none;
-}
-
-.sign-item {
-  flex: 1;
-}
-
-.signs-text {
+  align-items: flex-start;
   text-align: left;
+  margin: 80px auto;
+  justify-content: space-around;
+  width: 1000px;
+  height: 140px;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  border-radius: 5px;
+
+  }
+  
+  .sign-up-section button {
+      align-self: center;
+      padding: 10px 30px;
+      color: #F9FAF8;
+      background-color: #3882F6;
+      border-radius: 10px;
+      border-color: #F9FAF8;
+      border-width: 2px; 
+      border-style: solid; 
+  }
+
+  button:hover {
+  background-color: lightpink; /* Change background color when user hovers over the button */
+  color: white; /* Keep the text color white */
+  cursor: pointer; /* Change cursor to pointer when hovering */
 }
 
-.signs-button button {
-  background: #F9FAF8;
-  color: #1F2937;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  font-family: 'Roboto', arial;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
+  .fourth-header {
+      font-weight: 900;
+      font-size: 18px;
+      margin: 40px 0 0 0;
+  }
+  
+  .fourth-subtext {
+      margin: 0 0 40px 0;
+  }
+
+  footer {
+      display: block;
+      color: #FFFFFF;
+      background-color: #1F2937;
+      width: 100%;
+      text-align: center;
+      padding: 24px 0px;
+      align-self: stretch;
+  }
+
+  @media (max-width: 600px) {
+      .sign-up-section {
+          width: 90%;
+          height: 120px;
+      }
+  }
+  
